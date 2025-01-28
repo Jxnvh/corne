@@ -23,6 +23,11 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 / {
+
+ combos {
+    #include "combos.dtsi"
+  };
+
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
