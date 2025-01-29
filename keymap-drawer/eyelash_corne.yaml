@@ -105,9 +105,9 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Sft+8
-  - Sft+9
-  - '*'
+  - '#'
+  - {t: AltGr+7, s: AltGr+&}
+  - {t: AltGr+0, s: AltGr+)}
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -120,11 +120,11 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - AltGr+7
-  - AltGr+0
-  - {t: Sft+-, s: Sft+_}
-  - {t: ']', s: '}'}
-  - {t: \, s: '|'}
+  - {t: Sft+7, s: Sft+&}
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
+  - AltGr+}
+  - Sft+}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
@@ -134,11 +134,11 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - AltGr+8
-  - AltGr+9
-  - '{'
+  - '?'
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
   - '}'
-  - '|'
+  - AltGr+NUBS
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
