@@ -60,6 +60,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        sd_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <15 16>;
+        };
+
+        screenshot {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
