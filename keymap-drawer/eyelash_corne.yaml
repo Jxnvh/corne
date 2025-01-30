@@ -200,3 +200,7 @@ combos:
   k: Sft+.
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
+- p: [15, 16]
+  k: $$mdi:keyboard-esc$$
+- p: [11, 12]
+  k: PRINTSCREEN
