@@ -90,7 +90,7 @@
         };
 
         zj {
-            bindings = <&kp LS(KP_EQUAL)>;
+            bindings = <&kp LS(EQUAL)>;
             key-positions = <7 23>;
             layers = <2>;
         };
