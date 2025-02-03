@@ -204,11 +204,15 @@ combos:
   k: $$mdi:keyboard-esc$$
 - p: [26, 27]
   k: PRINTSCREEN
-- p: [46, 8, 23]
+- p: [8, 23]
   k: AltGr+|
-- p: [23, 9, 46]
+  l: [SYMBOL]
+- p: [23, 9]
   k: NUBS
-- p: [8, 24, 46]
+  l: [SYMBOL]
+- p: [8, 24]
   k: Sft+NUBS
-- p: [7, 23, 46]
+  l: [SYMBOL]
+- p: [7, 23]
   k: Sft+KP EQUAL
+  l: [SYMBOL]
