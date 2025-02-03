@@ -214,5 +214,5 @@ combos:
   k: Sft+NUBS
   l: [SYMBOL]
 - p: [7, 23]
-  k: Sft+KP EQUAL
+  k: Sft+=
   l: [SYMBOL]
