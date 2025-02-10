@@ -32,6 +32,17 @@
             #binding-cells = <0>;
             bindings = <&kp LS(RIGHT_BRACE)>, <&kp RA(RIGHT_BRACKET)>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <26>;
+            flavor = "hold-preferred";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -102,10 +113,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I         &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp ESC
+                              &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -126,9 +137,9 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp LS(N5)                            &mmv MOVE_UP                     &kp NUHS       &kp RA(N7)  &kp RA(N0)  &kp LPAR      &kp RPAR      &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp RA(RBRC)  &td0          &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5    &trans                    &mmv MOVE_DOWN                   &kp LS(MINUS)  &kp RA(N8)  &kp RA(N9)  &kp RBRC      &kp RA(NUBS)  &kp TILDE
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp LS(N5)                            &mmv MOVE_UP                     &kp NUHS       &kp RA(N7)  &kp RA(N0)  &kp LPAR      &kp RPAR                                         &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp RA(RBRC)  &new_behavior LS(RIGHT_BRACE) RA(RIGHT_BRACKET)  &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5    &trans                    &mmv MOVE_DOWN                   &kp LS(MINUS)  &kp RA(N8)  &kp RA(N9)  &kp RBRC      &kp RA(NUBS)                                     &kp TILDE
                                     &trans     &trans     &kp SPACE                                                              &kp RET        &trans      &trans
             >;
 
