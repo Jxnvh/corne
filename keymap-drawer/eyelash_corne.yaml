@@ -216,3 +216,21 @@ combos:
 - p: [7, 23]
   k: Sft+=
   l: [SYMBOL]
+- p: [14, 5]
+  k: AltGr+Q
+- p: [25, 11]
+  k: {t: ']', s: '}'}
+  l: [SYMBOL]
+- p: [22, 24]
+  k: Sft+KP 6
+- p: [22, 23]
+  k: {t: /, s: '?'}
+  l: [SYMBOL]
+- p: [36, 37]
+  k: Sft+/
+- p: [9, 24]
+  k: Sft+#
+  l: [SYMBOL]
+- p: [8, 24, 39]
+  k: AltGr+-
+  l: [SYMBOL]
