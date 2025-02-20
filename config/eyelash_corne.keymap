@@ -105,6 +105,45 @@
             key-positions = <7 23>;
             layers = <2>;
         };
+
+        at {
+            bindings = <&kp RA(Q)>;
+            key-positions = <14 5>;
+        };
+
+        plus {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <25 11>;
+            layers = <2>;
+        };
+
+        und {
+            bindings = <&kp LS(KP_NUMBER_6)>;
+            key-positions = <22 24>;
+        };
+
+        minus {
+            bindings = <&kp SLASH>;
+            key-positions = <22 23>;
+            layers = <2>;
+        };
+
+        underscore {
+            bindings = <&kp LS(SLASH)>;
+            key-positions = <36 37>;
+        };
+
+        sq {
+            bindings = <&kp LS(NUHS)>;
+            key-positions = <9 24>;
+            layers = <2>;
+        };
+
+        backslash {
+            bindings = <&kp RA(MINUS)>;
+            key-positions = <8 24 39>;
+            layers = <2>;
+        };
     };
 
     keymap {
