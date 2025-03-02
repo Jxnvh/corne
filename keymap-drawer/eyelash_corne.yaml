@@ -225,12 +225,17 @@ combos:
   k: Sft+KP 6
 - p: [22, 23]
   k: {t: /, s: '?'}
-  l: [SYMBOL]
+  l: [QWERTY]
 - p: [36, 37]
   k: Sft+/
+  l: [QWERTY]
 - p: [9, 24]
   k: Sft+#
   l: [SYMBOL]
 - p: [8, 24, 39]
   k: AltGr+-
   l: [SYMBOL]
+- p: [11, 25]
+  k: '}'
+- p: [8, 3]
+  k: '{'
