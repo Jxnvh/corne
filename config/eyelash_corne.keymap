@@ -125,12 +125,13 @@
         minus {
             bindings = <&kp SLASH>;
             key-positions = <22 23>;
-            layers = <2>;
+            layers = <0>;
         };
 
         underscore {
             bindings = <&kp LS(SLASH)>;
             key-positions = <36 37>;
+            layers = <0>;
         };
 
         sq {
@@ -143,6 +144,16 @@
             bindings = <&kp RA(MINUS)>;
             key-positions = <8 24 39>;
             layers = <2>;
+        };
+
+        pl {
+            bindings = <&kp RBRC>;
+            key-positions = <11 25>;
+        };
+
+        ue {
+            bindings = <&kp LBRC>;
+            key-positions = <8 3>;
         };
     };
 
