@@ -125,7 +125,7 @@ layers:
   - {t: Sft+8, s: Sft+*}
   - {t: Sft+9, s: Sft+(}
   - AltGr+}
-  - '&slash RA(RIGHT_BRACKET) LS(RIGHT_BRACE)'
+  - {t: '`', s: '~'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
